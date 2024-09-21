@@ -20,7 +20,7 @@ const projects = [
     description:
       "A full-stack web application that helps users track personal finances.",
     technologies: ["Java", "Spring Boot", "Vue.js", "Axios"],
-    image: "project2.jpg", // Add the image filename here
+    image: "project2.jpeg", // Add the image filename here
     link: "https://github.com/khanhbrandy/CSIS3275",
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     description:
       "A full-stack web application that helps users track personal finances.",
     technologies: ["Tableau", "Excel", "Data Visualization", "Data Cleaning"],
-    image: "TableauProject.jpg",
+    image: "TableuProject.jpg",
     link: "https://public.tableau.com/app/profile/juan.restrepo1520/vizzes",
   },
   {
