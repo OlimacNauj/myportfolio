@@ -4,32 +4,85 @@ body {
     transition: background 0.5s, color 0.5s;
   }
   
-
+:root{
+  background-color: #0e1419;;
+}
   .dark {
     background-color: #0e1419;
     color: #f5f5f5;
   }
   
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #1f1f1f;
-    padding: 10px 20px;
-    color: #f5f5f5;
-  }
-  
+ 
+/* Basic styling for the Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjusted padding */
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin-right: 60px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hide the menu button on larger screens */
+.menu-button {
+  display: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1024px) {
   .navbar ul {
-    list-style: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar li {
+    margin: 10px 10px 10px 0;
+  }
+
+  .menu-button {
+    display: block;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 20px;
+
+    cursor: pointer;
+  }
+
+  /* Show the Navbar items when the button is clicked */
+  .navbar ul.show {
     display: flex;
-    gap: 15px;
   }
-  
-  .navbar a {
-    color: #50fa7b;
-    text-decoration: none;
-  }
-  
-  
+}
   .profile-photo {
     border-radius: 40%;
     width: 200px;
@@ -56,7 +109,10 @@ body {
   }
   
   .footer {
-    text-align: center;
+    position: relative;
+    bottom: 1em;
+    right: 1em;
+    text-align: right;
     padding: 20px;
     background-color: #1f1f1f;
   }
@@ -193,3 +249,23 @@ h2 {
   }
 }
   
+.footer{
+    display:right;
+
+}
+.linkedin_img{
+    width: 40px;
+    margin: 10px;
+    margin: 20px 20px 20px 0;
+    color: white;
+}
+.github_img{
+    width: 40px;
+    margin: 10px;
+    margin: 20px 20px 20px 0;
+    color: white;
+}
+
+.edu-item ul li {
+list-style: none;
+}

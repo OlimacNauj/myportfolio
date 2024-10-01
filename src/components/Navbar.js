@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <nav className="navbar">
       <h2>Juan Camilo Restrepo</h2>
-      <ul>
+      <button className="menu-button" onClick={toggleMenu}>
+        <FaBars />
+      </button>
+      <ul className={menuOpen ? "show" : ""}>
         <li>
           <a href="#about">About</a>
         </li>

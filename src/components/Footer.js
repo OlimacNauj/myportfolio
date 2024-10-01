@@ -9,16 +9,22 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        LinkedIn
+        <img
+          alt="LinkedIn"
+          src="./assets/LinkedIn-Logos/LI-In-Bug.png"
+          className="linkedin_img"
+        />
       </a>{" "}
-      |
       <a
         href="https://github.com/OlimacNauj"
         target="_blank"
         rel="noopener noreferrer"
       >
-        {" "}
-        GitHub
+        <img
+          alt="GitHub"
+          src="./assets/github-mark-c791e9551fe4/github-mark/github-mark-white.png"
+          className="github_img"
+        ></img>
       </a>
     </footer>
   );
