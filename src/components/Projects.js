@@ -62,7 +62,7 @@ const projects = [
       "JWT",
       "RESTful API",
     ],
-    image: "logoMERN.jpeg", // Add the image filename here,
+    image: "logoMERN.jpeg",
     link: "https://github.com/OlimacNauj/p2p-renting-MERN-stack-app",
   },
 
@@ -76,6 +76,7 @@ const Projects = () => {
       <div className="project-list">
         {projects.map((project, index) => (
           <div className="project-item" key={index}>
+            <h3 className="project-title">{project.name}</h3>
             {/* Image for each project */}
             <img
               src={`${process.env.PUBLIC_URL}/assets/${project.image}`}
@@ -83,13 +84,14 @@ const Projects = () => {
               className="project-image"
               onClick={() => window.open(project.link, "_blank")}
             />
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <ul>
-              {project.technologies.map((tech, i) => (
-                <li key={i}>{tech}</li>
-              ))}
-            </ul>
+            <div className="project-link">
+              <p className="project-description">{project.description}</p>
+              <ul className="Project-tech">
+                {project.technologies.map((tech, i) => (
+                  <li key={i}>{tech}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         ))}
       </div>

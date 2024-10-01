@@ -10,7 +10,7 @@ const About = ({ darkMode }) => {
             alt="Juan Camilo Restrepo"
             className="profile-photo"
           />
-          <h2>About Me</h2>
+          <h2>Hi! </h2>
           <p>
             I'm Juan Camilo Restrepo, a Data Scientist and Data Analyst with a
             strong foundation in theoretical physics, having completed my
