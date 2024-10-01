@@ -72,7 +72,7 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="projects">
-      <h2>Projects</h2>
+      <h2>🧠 Projects</h2>
       <div className="project-list">
         {projects.map((project, index) => (
           <div className="project-item" key={index}>
@@ -86,6 +86,7 @@ const Projects = () => {
             />
             <div className="project-link">
               <p className="project-description">{project.description}</p>
+              <p> technologies / skills:</p>
               <ul className="Project-tech">
                 {project.technologies.map((tech, i) => (
                   <li key={i}>{tech}</li>

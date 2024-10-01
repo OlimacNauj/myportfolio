@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>Connect with me:</p>
+      <p>Connect</p>
       <a
         href="https://www.linkedin.com/in/jrestrepob/"
         target="_blank"

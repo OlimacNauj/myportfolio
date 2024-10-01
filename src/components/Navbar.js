@@ -25,6 +25,9 @@ const Navbar = () => {
           <a href="#education">Education</a>
         </li>
         <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
           <a href="#resume">Resume</a>
         </li>
       </ul>

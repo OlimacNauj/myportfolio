@@ -3,15 +3,15 @@ import React from "react";
 const Education = () => {
   return (
     <section id="education" className="education">
-      <h2>Education</h2>
+      <h2>📖Education</h2>
       <div className="edu-item">
         <h3>Douglas College, Canada</h3>
-        <p>
+        <p className="degree">
           Post Baccalaureate in Computer Information Systems, Data Analytics.
           2024
         </p>
         <p>
-          <strong>Awards:</strong>
+          <strong>🏆Awards:</strong>
         </p>
         <ul>
           <li>Dean's List: 2 terms</li>
@@ -21,9 +21,11 @@ const Education = () => {
       </div>
       <div className="edu-item">
         <h3>Universidad del Valle, Colombia</h3>
-        <p>Bachelor of Science in Physics (Físico/ Physicist). 2017</p>
+        <p className="degree">
+          Bachelor of Science in Physics (Físico/ Physicist). 2017
+        </p>
         <p>
-          <strong>Awards:</strong>
+          <strong>🏆Awards:</strong>
         </p>
         <ul>
           <li>

@@ -6,11 +6,11 @@ const About = ({ darkMode }) => {
       <div className="about-content">
         <div className="about-me">
           <img
-            src="/assets/dark-photo.jpg"
+            src="/assets/light-photo.jpg"
             alt="Juan Camilo Restrepo"
             className="profile-photo"
           />
-          <h2>Hi! </h2>
+          <h2>Hi! 👋 </h2>
           <p>
             I'm Juan Camilo Restrepo, a Data Scientist and Data Analyst with a
             strong foundation in theoretical physics, having completed my
